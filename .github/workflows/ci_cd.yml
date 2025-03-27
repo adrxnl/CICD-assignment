@@ -70,6 +70,7 @@ jobs:
           run: |
             docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/backend_flask:latest .
             # make sure that your dockerhub repo name matches as this line (backend_flask)
+            # edit made in order to retry push with correct environment secret nomenclature 
 
 
     # Step 8: # Log in to Docker Hub
